@@ -1,0 +1,367 @@
+/* Main page styling to include both Dashboard and Home sections */
+.home-page {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    height: auto; /* Adjust height as needed */
+  }
+  
+  /* Home section container */
+  .home-container {
+    background: linear-gradient(135deg, #FF6070, #9F33FF, #168AFF);
+    flex-grow: 1; /* Allow this to grow and fill the space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px; /* Add padding */
+  }
+  
+  /* Profile image in rectangle shape */
+  .image-container {
+    margin-bottom: 20px;
+  }
+  
+  .profile-image {
+    width: 250px;
+    height: 350px;
+    border-radius: 10px; /* Rectangle image */
+    border: 3px solid white;
+  }
+  
+  /* Description section */
+  .description {
+    text-align: center;
+    max-width: 600px;
+    color: #FFFFFF;
+  }
+  
+  .bold-text {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Social Icons */
+  .social-icons {
+    margin: 20px 0;
+  }
+  
+  .icon {
+    font-size: 30px;
+    margin: 0 15px;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .icon:hover {
+    color: #FFD700; /* Gold color on hover */
+  }
+  
+  /* Resume button */
+  .resume-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #fff;
+    color: #168AFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .resume-button:hover {
+    background-color: #168AFF;
+    color: white;
+  }
+  
+  /* About Me section */
+  .about-me-container {
+    background: linear-gradient(135deg, #FF6070, #9F33FF, #168AFF); /* Matching background */
+    color: white; /* Text color */
+    padding: 50px 20px; /* Padding for spacing */
+    text-align: center; /* Center align text */
+    width: 100%; /* Full width */
+    margin-top: 20px; /* Space below the Home section */
+    box-sizing: border-box; /* Include padding in width */
+  }
+  
+  /* Optional styling for the title and description */
+  .about-me-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Space below title */
+  }
+  
+  .about-me-description {
+    max-width: 800px; /* Control the width */
+    margin: 0 auto; /* Center the description */
+    font-size: 18px;
+    line-height: 1.6; /* Line height for better readability */
+  }
+  
+  /* Education Section Styling */
+  .education-container {
+    background: linear-gradient(135deg, #FF6070, #9F33FF, #168AFF);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px; /* Space below the About Me section */
+    box-sizing: border-box; /* Include padding in width */
+  }
+  
+  .education-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Space below title */
+  }
+  
+  .education-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items */
+  }
+  
+  .education-item {
+    background: rgba(255, 255, 255, 0.1); /* Light background for items */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the item */
+    margin: 10px 0; /* Space between items */
+    width: 90%; /* Width for items */
+    max-width: 600px; /* Maximum width */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .date-symbol {
+    color: #FFD700; /* Gold color for date symbol */
+    font-size: 14px; /* Smaller font for date */
+  }
+  
+/* Projects Section Styling */
+.projects-container {
+  background: linear-gradient(135deg, #FF6070, #9F33FF, #168AFF);
+  color: white;
+  padding: 5px 2px;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px; /* Space below the Education section */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Title Styling */
+.projects-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Grid Layout for Projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 Columns */
+  gap: 20px; /* Space between project cards */
+  padding-left: 16%;
+  padding-right: 11%; /* Increase this to add more space on the left */
+}
+
+/* Project Cards Styling */
+.project-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer; /* Indicate clickable */
+  transition: transform 0.3s;
+  width: 85%; /* Adjust width as needed */
+  margin-left: 0; /* No additional margin */
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* Image Styling for Projects */
+.project-image {
+  width: 25%; /* Ensure the image fills the card */
+  border-radius: 8px;
+}
+
+/* Project Card Heading */
+.project-card h3 {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+
+/* Project Card Description */
+.project-card p {
+  font-size: 0.9em;
+}
+/* Internship Section Styling */
+.internship-container {
+  background: linear-gradient(135deg, #FF6070, #9F33FF, #168AFF);
+  color: white;
+  padding: 5px 2px;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px; /* Space below the Education section */
+  box-sizing: border-box;
+}
+
+/* Internship Section Title */
+.internship-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-left: 4%;
+}
+
+/* Grid Layout for Internships */
+.internship-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 Columns */
+  gap: 20px; /* Space between internship cards */
+  padding-left: 16%; /* Add space on the left, matching project section */
+  padding-right: 11%;
+}
+
+/* Internship Cards Styling */
+.internship-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  width: 90%; /* Adjust width to match project section */
+  margin-left: 0;
+}
+
+.internship-card:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* Image Styling for Internships */
+.internship-image {
+  width: 25%;
+  border-radius: 8px;
+  height: 65%;
+}
+.internship-image1 {
+  width: 25%;
+  border-radius: 8px;
+}
+
+/* Internship Card Heading */
+.internship-card h3 {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+
+/* Internship Card Description */
+.internship-card p {
+  font-size: 0.9em;
+}
+.achievements-container {
+  background: linear-gradient(135deg, #FF6070, #9F33FF, #168AFF);
+  color: white;
+  padding: 5px 2px;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px; /* Space below the Education section */
+  box-sizing: border-box;
+}
+
+.achievements-title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-left: 3%;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding-left: 27%;
+}
+
+.achievement-card {
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: scale(1.05);
+}
+
+.achievement-image {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.achievement-card h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+/* Contact Footer Styles */
+.contact-container {
+  background: linear-gradient(135deg, #FF6070, #9F33FF, #168AFF);
+  color: white;
+  padding: 5px 2px;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px; /* Space below the Education section */
+  box-sizing: border-box;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.contact-text {
+  font-size: 18px;
+}
+
+.coding-profiles {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.profile-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.profile-item:hover {
+  transform: scale(1.1);
+}
+
+.profile-icon {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.profile-text {
+  font-size: 18px;
+  color: #ffffff;
+}
